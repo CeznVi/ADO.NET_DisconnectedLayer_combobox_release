@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBox_Query = new System.Windows.Forms.TextBox();
             this.dataGridView_Results = new System.Windows.Forms.DataGridView();
             this.button_Execute = new System.Windows.Forms.Button();
@@ -84,6 +85,7 @@
             this.comboBox_selectDB.Location = new System.Drawing.Point(684, 13);
             this.comboBox_selectDB.Name = "comboBox_selectDB";
             this.comboBox_selectDB.Size = new System.Drawing.Size(135, 28);
+            this.comboBox_selectDB.Sorted = true;
             this.comboBox_selectDB.TabIndex = 4;
             this.comboBox_selectDB.Text = "Select table";
             this.comboBox_selectDB.SelectedIndexChanged += new System.EventHandler(this.comboBox_selectDB_SelectedIndexChanged);
@@ -98,6 +100,7 @@
             this.Controls.Add(this.button_Execute);
             this.Controls.Add(this.dataGridView_Results);
             this.Controls.Add(this.textBox_Query);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DiconnectedLayer";

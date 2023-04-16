@@ -176,35 +176,19 @@ namespace _003_DisconnectedLayer
 
                 DbCommand dbCommand = _dbProviderFactory.CreateCommand();
                 dbCommand.Connection = _dbConnection;
-                dbCommand.CommandText = $"SELECT * FROM {tableName}";
-                
+
+                dbCommand.CommandText = $"SELECT * FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = N'{tableName}'";
                 _dbConnection.Open();
 
-                DbDataReader dbDataReader = dbCommand.ExecuteReader();
-
                 //Формируем DataTable------------------------------------------------start
-                int lineIndex = 0;
-                do
+                using (DbDataReader dbR = dbCommand.ExecuteReader())
                 {
-                    while (dbDataReader.Read())
+                    while (dbR.Read())
                     {
-                        if (lineIndex == 0)          //выгружаю шапку таблицы
-                        {
-                            for (int i = 0; i < dbDataReader.FieldCount; i++)
-                            {
-                                _dataTable.Columns.Add(dbDataReader.GetName(i));
-                            }
-                            lineIndex++;
-                        }
-                        DataRow dataRow = _dataTable.NewRow();
-                        for (int i = 0; i < dbDataReader.FieldCount; i++)
-                        {
-                            dataRow[i] = dbDataReader[i];
-                        }
-                        _dataTable.Rows.Add(dataRow);
+                        _dataTable.Columns.Add(dbR["COLUMN_NAME"].ToString());
                     }
+                }
 
-                } while (dbDataReader.NextResult());
                 //Формируем DataTable------------------------------------------------end
                 dataGridView_Results.DataSource = _dataTable;
             }
