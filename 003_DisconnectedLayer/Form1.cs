@@ -167,5 +167,62 @@ namespace _003_DisconnectedLayer
             }
             _dbConnection.Close();
         }
+
+        private void SelectFromTable(string tableName)
+        {
+            try
+            {
+                _dataTable = new DataTable();
+
+                DbCommand dbCommand = _dbProviderFactory.CreateCommand();
+                dbCommand.Connection = _dbConnection;
+                dbCommand.CommandText = $"SELECT * FROM {tableName}";
+                
+                _dbConnection.Open();
+
+                DbDataReader dbDataReader = dbCommand.ExecuteReader();
+
+                //Формируем DataTable------------------------------------------------start
+                int lineIndex = 0;
+                do
+                {
+                    while (dbDataReader.Read())
+                    {
+                        if (lineIndex == 0)          //выгружаю шапку таблицы
+                        {
+                            for (int i = 0; i < dbDataReader.FieldCount; i++)
+                            {
+                                _dataTable.Columns.Add(dbDataReader.GetName(i));
+                            }
+                            lineIndex++;
+                        }
+                        DataRow dataRow = _dataTable.NewRow();
+                        for (int i = 0; i < dbDataReader.FieldCount; i++)
+                        {
+                            dataRow[i] = dbDataReader[i];
+                        }
+                        _dataTable.Rows.Add(dataRow);
+                    }
+
+                } while (dbDataReader.NextResult());
+                //Формируем DataTable------------------------------------------------end
+                dataGridView_Results.DataSource = _dataTable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                _dbConnection.Close();
+            }
+        }
+
+
+        private void comboBox_selectDB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SelectFromTable(comboBox_selectDB.SelectedItem.ToString());
+
+        }
     }
 }

@@ -86,6 +86,7 @@
             this.comboBox_selectDB.Size = new System.Drawing.Size(135, 28);
             this.comboBox_selectDB.TabIndex = 4;
             this.comboBox_selectDB.Text = "Select table";
+            this.comboBox_selectDB.SelectedIndexChanged += new System.EventHandler(this.comboBox_selectDB_SelectedIndexChanged);
             // 
             // Form1
             // 
