@@ -1,0 +1,21 @@
+C:\Users\student\Downloads\ADO.NET Project\003_DisconnectedLayer\bin\Debug\003_DisconnectedLayer.exe.config
+C:\Users\student\Downloads\ADO.NET Project\003_DisconnectedLayer\bin\Debug\003_DisconnectedLayer.exe
+C:\Users\student\Downloads\ADO.NET Project\003_DisconnectedLayer\bin\Debug\003_DisconnectedLayer.pdb
+C:\Users\student\Downloads\ADO.NET Project\003_DisconnectedLayer\obj\Debug\_003_DisconnectedLayer.Form1.resources
+C:\Users\student\Downloads\ADO.NET Project\003_DisconnectedLayer\obj\Debug\_003_DisconnectedLayer.Properties.Resources.resources
+C:\Users\student\Downloads\ADO.NET Project\003_DisconnectedLayer\obj\Debug\003_DisconnectedLayer.csproj.GenerateResource.cache
+C:\Users\student\Downloads\ADO.NET Project\003_DisconnectedLayer\obj\Debug\003_DisconnectedLayer.csproj.CoreCompileInputs.cache
+C:\Users\student\Downloads\ADO.NET Project\003_DisconnectedLayer\obj\Debug\003_DisconnectedLayer.exe
+C:\Users\student\Downloads\ADO.NET Project\003_DisconnectedLayer\obj\Debug\003_DisconnectedLayer.pdb
+C:\Users\student\Downloads\ADO.NET Project\003_DisconnectedLayer\obj\Debug\003_DisconnectedLayer.csprojAssemblyReference.cache
+D:\Програмирование\source\repos\ItStep_HW_OOP\ADO.NET_DisconnectedLayer_combobox_release\003_DisconnectedLayer\bin\Debug\003_DisconnectedLayer.exe.config
+D:\Програмирование\source\repos\ItStep_HW_OOP\ADO.NET_DisconnectedLayer_combobox_release\003_DisconnectedLayer\bin\Debug\003_DisconnectedLayer.exe
+D:\Програмирование\source\repos\ItStep_HW_OOP\ADO.NET_DisconnectedLayer_combobox_release\003_DisconnectedLayer\bin\Debug\003_DisconnectedLayer.pdb
+D:\Програмирование\source\repos\ItStep_HW_OOP\ADO.NET_DisconnectedLayer_combobox_release\003_DisconnectedLayer\obj\Debug\003_DisconnectedLayer.csproj.AssemblyReference.cache
+D:\Програмирование\source\repos\ItStep_HW_OOP\ADO.NET_DisconnectedLayer_combobox_release\003_DisconnectedLayer\obj\Debug\003_DisconnectedLayer.csproj.SuggestedBindingRedirects.cache
+D:\Програмирование\source\repos\ItStep_HW_OOP\ADO.NET_DisconnectedLayer_combobox_release\003_DisconnectedLayer\obj\Debug\_003_DisconnectedLayer.Form1.resources
+D:\Програмирование\source\repos\ItStep_HW_OOP\ADO.NET_DisconnectedLayer_combobox_release\003_DisconnectedLayer\obj\Debug\_003_DisconnectedLayer.Properties.Resources.resources
+D:\Програмирование\source\repos\ItStep_HW_OOP\ADO.NET_DisconnectedLayer_combobox_release\003_DisconnectedLayer\obj\Debug\003_DisconnectedLayer.csproj.GenerateResource.cache
+D:\Програмирование\source\repos\ItStep_HW_OOP\ADO.NET_DisconnectedLayer_combobox_release\003_DisconnectedLayer\obj\Debug\003_DisconnectedLayer.csproj.CoreCompileInputs.cache
+D:\Програмирование\source\repos\ItStep_HW_OOP\ADO.NET_DisconnectedLayer_combobox_release\003_DisconnectedLayer\obj\Debug\003_DisconnectedLayer.exe
+D:\Програмирование\source\repos\ItStep_HW_OOP\ADO.NET_DisconnectedLayer_combobox_release\003_DisconnectedLayer\obj\Debug\003_DisconnectedLayer.pdb
