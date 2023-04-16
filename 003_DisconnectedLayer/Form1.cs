@@ -166,7 +166,6 @@ namespace _003_DisconnectedLayer
                 }
             }
             _dbConnection.Close();
-
         }
     }
 }
